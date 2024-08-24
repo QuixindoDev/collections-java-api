@@ -1,13 +1,18 @@
 package com.dio.study.collections.list.operacoesbasicas;
 
-public class Tarefas {
+public class Tarefa {
     private String descricao;
 
-    public Tarefas(String descricao) {
+    public Tarefa(String descricao) {
         this.descricao = descricao;
     }
 
     public String getDescricao() {
+        return descricao;
+    }
+
+    @Override
+    public String toString() {
         return descricao;
     }
 }
