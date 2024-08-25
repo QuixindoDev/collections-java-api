@@ -44,8 +44,10 @@ public class CatalogoLivros {
     public Object pesquisarPorTitulo(String titulo) {
         List<Livro> livrosEncontrados = new ArrayList<>();
         for (Livro l: livros){
-            if (l.getTitulo().equalsIgnoreCase(titulo))
+            if (l.getTitulo().equalsIgnoreCase(titulo)) {
                 livrosEncontrados.add(l);
+                break;
+            }
         }
         if (livrosEncontrados.isEmpty())
             return "O livro "+titulo+" nao foi encontrado";
